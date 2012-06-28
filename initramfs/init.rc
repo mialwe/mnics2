@@ -897,3 +897,9 @@ service bugreport /system/bin/bugmailer.sh -v
 	disabled
 	oneshot
 	keycodes 114 115 116
+
+# MNICS2 init script
+#service post-init /sbin/mnics2.sh
+#    class core
+#    user root
+#    oneshot
