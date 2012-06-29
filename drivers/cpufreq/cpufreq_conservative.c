@@ -29,15 +29,15 @@
 #define MN_SMOOTH 1
 
 // cpu load trigger
-#define DEF_SMOOTH_UP (75)
+#define DEF_SMOOTH_UP (70)
 
 /*
  * dbs is used in this file as a shortform for demandbased switching
  * It helps to keep variable names smaller, simpler
  */
 
-#define DEF_FREQUENCY_UP_THRESHOLD		(58)
-#define DEF_FREQUENCY_DOWN_THRESHOLD		(39)
+#define DEF_FREQUENCY_UP_THRESHOLD		(56)
+#define DEF_FREQUENCY_DOWN_THRESHOLD		(38)
 
 /*
  * The polling frequency of this governor depends on the capability of
@@ -61,7 +61,7 @@ static unsigned int smooth_up_awake;
 
 #define SAMPLING_RATE_SLEEP_MULTIPLIER (2)
 
-#define LATENCY_MULTIPLIER			(1000)
+#define LATENCY_MULTIPLIER			(500)
 #define MIN_LATENCY_MULTIPLIER			(100)
 #define DEF_SAMPLING_DOWN_FACTOR		(1)
 #define MAX_SAMPLING_DOWN_FACTOR		(10)
