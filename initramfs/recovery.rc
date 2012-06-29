@@ -40,8 +40,9 @@ on boot
 service ueventd /sbin/ueventd
     critical
 
-service recovery /sbin/recovery
-
+service recovery /sbin/recovery.sh
+    oneshot
+    
 service adbd /sbin/adbd recovery
     disabled
 

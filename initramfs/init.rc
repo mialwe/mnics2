@@ -899,7 +899,7 @@ service bugreport /system/bin/bugmailer.sh -v
 	keycodes 114 115 116
 
 # MNICS2 init script
-#service post-init /sbin/mnics2.sh
-#    class core
-#    user root
-#    oneshot
+service post-init /sbin/mnics2.sh
+    class core
+    user root
+    oneshot
