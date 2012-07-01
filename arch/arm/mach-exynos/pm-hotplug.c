@@ -39,8 +39,8 @@
 #include <linux/miscdevice.h> 	//for second_core by tegrak
 
 #define CHECK_DELAY	(HZ >> 1)
-#define TRANS_LOAD_L	25
-#define TRANS_LOAD_H	70
+#define TRANS_LOAD_L	40
+#define TRANS_LOAD_H	85
 
 #define HOTPLUG_UNLOCKED 0
 #define HOTPLUG_LOCKED 1
